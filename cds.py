@@ -10,9 +10,9 @@ light = MCP3008(channel=0, device=0)
 
 # 光センサの値の取得
 while True:
-    # 光センサの値を3.3倍して代入
-    cds = light.value * 3.3
-    # 桁数を3つにして丸め込み
-    print (round(cds,3))
+    # 光センサの値を100倍して代入
+    cds = int(light.value * 100)
+    # 光センサの値を表示
+    print(cds)
     # 1秒待機
     sleep(1)
