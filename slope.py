@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import PRi.GPIO as GPIO
+import RPi.GPIO as GPIO
 import time
 
 Sw520dPin = 18
